@@ -3,3 +3,6 @@
 	url = https://github.com/ololiuhqui/magnolia-free-hugo-theme.git
 
 
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
