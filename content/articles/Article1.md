@@ -55,7 +55,7 @@ To preface,  when adjusting the "randomizer" button, I had tried a few whole num
 
 ## Part One: Creating the Table 
 
-To being, I used the function `populateTable` to pass the `artists` variable as an arguemtn to use the data sorted within `artists` to display the table on my webpage.
+To begin, I used the function `populateTable` to pass the `artists` variable as an arguemtn to use the data sorted within `artists` to display the table on my webpage.
 
 ```js
 populateTable(artists); 
