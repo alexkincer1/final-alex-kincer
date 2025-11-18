@@ -26,3 +26,7 @@ theme = "ananke"
   name = "My Articles!"
   url = "/articles/"
   weight = 3 
+
+
+[params.ananke]
+  show_recent_posts = false # do not show recent posts on the homepage
