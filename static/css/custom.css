@@ -1,0 +1,25 @@
+/* recieved this code from initial-homer-white for the styling
+of the social links on my about page */
+
+
+
+.ul-socials {
+  list-style-type: none !important;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+.ul-socials li {
+  display: inline-block;
+}
+
+.nested-links .ul-socials li a {
+  text-align: center;
+  padding: 8px;
+  margin: 10px;
+}
+  
+
+
+

@@ -4,7 +4,6 @@ date: "2024-11-25"
 tags: ["Substantive", "Women in Christian Tradition", "History", "Religion"]
 ---
 
-
 ## REL341 - Fall 2024
 
 During the Fall of 2024, I took REL 341, Women in Christian Tradition, at Georgetown College with Dr. April Simpson. This course was an explanation of female involvement in the tradition of Christianity from the time of Jesus to present. We read a multitude of articles, books, chapters, and exerpts from women and bystandards of all races, ethnicities, and genders to take our own assumptions of women in Christianity and either build onto them with broader information, or learn how they need to be altered to be more accurate to the 21st century context. Below is a paper I wrote in an attempt to analyze evidence from the readings we encountered throughout the semester. 

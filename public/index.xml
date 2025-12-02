@@ -9,7 +9,7 @@
     <lastBuildDate>Wed, 19 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About Alex</title>
+      <title>About Me</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
@@ -51,11 +51,11 @@
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor lacinia facilisis. Proin nec porttitor nibh, ut efficitur sapien. Morbi sed velit sit amet odio porta efficitur. Duis quis tincidunt metus. Praesent lacus risus, porttitor vel mattis sed, lobortis eget orci. Duis bibendum, elit eu porta gravida, nulla urna placerat nisi, quis congue turpis augue vel est. Sed sed risus nec leo sollicitudin euismod. Vestibulum pulvinar orci et augue laoreet lobortis. Nullam pellentesque metus a dolor laoreet consectetur. Nullam consectetur feugiat lectus nec vehicula.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Analyzing Evidence in the Christian Tradition</title>
+      <title>Philosophical Worldviews: Understanding the Nature of Reality</title>
       <link>http://localhost:1313/blog/blog2/</link>
-      <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/blog2/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;idea-for-this-writing&#34;&gt;Idea for this Writing&lt;/h2&gt;&#xA;&lt;p&gt;In Spring of 2025, I was enrolled in PHI 201, History of Philosophy, at Georgetown College. In this course, we were given prompts to compare and contrast contemporary beliefs with Ancient and Medieval beliefs on particular topcs. The reason behind these papers were to encourage us to think deeply about our beliefs vs. the things we were reading so all ideas could be explored for deeper understanding.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Analyzing Evidence in Works on the Christian Tradition</title>

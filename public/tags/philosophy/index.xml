@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philosophy on My Website Warmup</title>
+    <link>http://localhost:1313/tags/philosophy/</link>
+    <description>Recent content in Philosophy on My Website Warmup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Philosophical Worldviews: Understanding the Nature of Reality</title>
+      <link>http://localhost:1313/blog/blog2/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/blog2/</guid>
+      <description>&lt;h2 id=&#34;idea-for-this-writing&#34;&gt;Idea for this Writing&lt;/h2&gt;&#xA;&lt;p&gt;In Spring of 2025, I was enrolled in PHI 201, History of Philosophy, at Georgetown College. In this course, we were given prompts to compare and contrast contemporary beliefs with Ancient and Medieval beliefs on particular topcs. The reason behind these papers were to encourage us to think deeply about our beliefs vs. the things we were reading so all ideas could be explored for deeper understanding.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

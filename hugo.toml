@@ -1,38 +1,59 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My Website Warmup'
-theme = "hugo-theme-stack-starter-master"
+theme = "ananke"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+
+
+
+
+[params.ananke.social.follow]
+  new_window_icon = false
+  networks = [
+    "facebook",
+    "instagram"
+  ]
+
+[params.ananke.social.instagram]
+username = "alexkincer"
+
+[params.ananke.social.facebook]
+profilelink = "https://www.facebook.com/alex.kincer.5"
+
+[params.ananke.social.email]
+profilelink = "mailto:rakincer@georgetowncolleg.edu"  
 
 
 [[menu.main]]
   identifier = "home"
   name = "Home"
   url = "/"
-  weight = 1
+  weight = 10
 
 
 [[menu.main]]
   identifier = "about"
   name = "About Me!"
   url = "/about/"
-  weight = 2 
+  weight = 20 
 
 
 [[menu.main]]
   identifier = "articles"
   name = "My Articles!"
   url = "/articles/"
-  weight = 3 
+  weight = 30 
+
 
 
 [[menu.main]]
   identifier = "blog"
   name = "My Blogs!"
   url = "/blog/"
-  weight = 4
+  weight = 40
 
 
 [params.ananke]

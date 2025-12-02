@@ -1,5 +1,5 @@
 ---
-title: About Alex
+title: About Me
 description: ""
 omit_header_text: false
 featured_image: images/C159EE83-9677-42CE-A547-2100D43CB7C1.jpeg
@@ -7,6 +7,23 @@ summary:  "Eastern Kentucky, Letcher County, Family, Education, Cheerleading, Ru
 type: page
 weight: 2
 ---
+
+<figure class="center mw5 pb3">
+    <img src="/images/C159EE83-9677-42CE-A547-2100D43CB7C1.jpeg" class="br-100 mw5">
+    <figcaption class="tc mw5 center">
+    Hello, I'm Alex Kincer!
+    </figcaption>
+</figure>
+
+<div class="mw7 center">
+<ul class="ul-socials mw7 center">
+    <li><a class="f5 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib near-black" href="https://www.instagram.com/alexkincer" target="_blank">Instagram</a></li>
+    <li><a class="f5 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib near-black" href="https://www.facebook.com/alex.kincer.5" target="_blank">Facebook</a></li>
+    <li><a class="f5 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib near-black" href="mailto:rakincer@georgetowncollege.edu" target="_blank">&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;</a></li>
+</ul>
+</div>
+<hr>
+
 
 
 ## My Education Background
