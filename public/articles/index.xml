@@ -6,20 +6,35 @@
     <description>Recent content in Articles on My Website Warmup</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sorting A Table</title>
-      <link>http://localhost:1313/articles/article1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/articles/article1/</guid>
-      <description>Adding buttons to previously coded websites.</description>
+      <title>AI Usage</title>
+      <link>http://localhost:1313/articles/article3/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article3/</guid>
+      <description>How the use of AI was performed in this Website building.</description>
     </item>
     <item>
-      <title>Chapter Five: Flattening a Loop</title>
+      <title>Website Enhancement</title>
+      <link>http://localhost:1313/articles/article4/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article4/</guid>
+      <description>How I enhanced my Website Assignment for CSC 324 in the Fall of 2025.</description>
+    </item>
+    <item>
+      <title>Institutional Racism</title>
+      <link>http://localhost:1313/articles/article1/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article1/</guid>
+      <description>A 300 word essay for Sociology 111 at Georgetown College in the Fall of 2025.</description>
+    </item>
+    <item>
+      <title>Ballin&#39; Out Docuseries</title>
       <link>http://localhost:1313/articles/article2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/articles/article2/</guid>
-      <description>Flattening arrays into a single array while keeping all elements present.</description>
+      <description>A 500+ word personal reflection on the &amp;lsquo;Ballin&amp;rsquo; Out&amp;rsquo; docuseries watched in KHS 347 at Georgetown College in the Fall of 2025.</description>
     </item>
   </channel>
 </rss>

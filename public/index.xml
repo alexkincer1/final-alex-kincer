@@ -6,8 +6,29 @@
     <description>Recent content in welcome! on My Website Warmup</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Usage</title>
+      <link>http://localhost:1313/articles/article3/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article3/</guid>
+      <description>How the use of AI was performed in this Website building.</description>
+    </item>
+    <item>
+      <title>Website Enhancement</title>
+      <link>http://localhost:1313/articles/article4/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article4/</guid>
+      <description>How I enhanced my Website Assignment for CSC 324 in the Fall of 2025.</description>
+    </item>
+    <item>
+      <title>Institutional Racism</title>
+      <link>http://localhost:1313/articles/article1/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article1/</guid>
+      <description>A 300 word essay for Sociology 111 at Georgetown College in the Fall of 2025.</description>
+    </item>
     <item>
       <title>About Me</title>
       <link>http://localhost:1313/about/</link>
@@ -16,18 +37,11 @@
       <description>Eastern Kentucky, Letcher County, Family, Education, Cheerleading, Running, Occupational Therapy, Alex Kincer</description>
     </item>
     <item>
-      <title>Sorting A Table</title>
-      <link>http://localhost:1313/articles/article1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/articles/article1/</guid>
-      <description>Adding buttons to previously coded websites.</description>
-    </item>
-    <item>
-      <title>Chapter Five: Flattening a Loop</title>
+      <title>Ballin&#39; Out Docuseries</title>
       <link>http://localhost:1313/articles/article2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/articles/article2/</guid>
-      <description>Flattening arrays into a single array while keeping all elements present.</description>
+      <description>A 500+ word personal reflection on the &amp;lsquo;Ballin&amp;rsquo; Out&amp;rsquo; docuseries watched in KHS 347 at Georgetown College in the Fall of 2025.</description>
     </item>
     <item>
       <title>Filler Blog Two</title>
@@ -55,7 +69,7 @@
       <link>http://localhost:1313/blog/blog2/</link>
       <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/blog2/</guid>
-      <description>&lt;h2 id=&#34;idea-for-this-writing&#34;&gt;Idea for this Writing&lt;/h2&gt;&#xA;&lt;p&gt;In Spring of 2025, I was enrolled in PHI 201, History of Philosophy, at Georgetown College. In this course, we were given prompts to compare and contrast contemporary beliefs with Ancient and Medieval beliefs on particular topcs. The reason behind these papers were to encourage us to think deeply about our beliefs vs. the things we were reading so all ideas could be explored for deeper understanding.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;phi201---spring-2025&#34;&gt;PHI201 - Spring 2025&lt;/h2&gt;&#xA;&lt;h4 id=&#34;idea-for-this-writing&#34;&gt;Idea for this Writing&lt;/h4&gt;&#xA;&lt;p&gt;In Spring of 2025, I was enrolled in PHI 201, History of Philosophy, at Georgetown College. In this course, we were given prompts to compare and contrast contemporary beliefs with Ancient and Medieval beliefs on particular topcs. The reason behind these papers were to encourage us to think deeply about our beliefs vs. the things we were reading so all ideas could be explored for deeper understanding.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Analyzing Evidence in Works on the Christian Tradition</title>

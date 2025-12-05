@@ -1,339 +1,41 @@
 ---
-title: "Sorting A Table"
+title: "Institutional Racism"
+date: "2025-11-07"
 description: ""
 omit_header_text: true
-featured_image:
-summary: "Adding buttons to previously coded websites."
+featured_image: images/7b6b442822c8ba56fb6ff82f7bf04f1f.jpg
+summary: "A 300 word essay for Sociology 111 at Georgetown College in the Fall of 2025."
 type: page
 weight: 2
 ---
 
+## Class Summary
 
-## Prepping for Assignment
+SOC 111 is an introductory Sociology course available at Georgetown College. This course was taught by Dr. Katherine Graves Ordonez in the Fall of 2025. The goal of this course is to study, explain, understand, and assess fundamental theories, concepts, and research methods to analyze and evaluate the roles of social institutions and culutral standards and how they effect standpoints, outcomes, opportunities, and perspectives on individuals and groups.
 
-For CSC 324, Fundamentals of Data Computing, at GC, we were given the following assignment titled "Sorting A Table' using VSCODE. 
+## Assignment
 
-The problem is described in full [here](https://homerhanumat.github.io/csc324resources/exercises/table-sort.html). For all homework problems for this course, we are required to push to our git repositories, which is noted in the link above. For this problem, we were given the task to build on a previous assignment titled Making-A-Table. The instructions and intent for this assignment is described [here](https://homerhanumat.github.io/csc324resources/exercises/table.html). However, my original submission for this problem was not ideal to build on, so I used Dr. White's key to complete Sorting A Table. 
+The direction for the assignment is as follows: 
 
-<blockquote>
-To begin, Dr. White gave us a custom.js file that defines an array called artists. This was the code we were given to add onto to create the two assignments that are discussed in the rest of this article. The code created an array that include 5 artists, their birth years, and a link to one of their youtube videos. For the array, the code included:
+Answer all questions: Write at least two pages. No larger than 12 font Times New Roman and no more than double spacing. Essay format only. Cite your work well, have a reference list and intext citations (last name, year: page number).  
 
-```js
- const artists = [
-   {
-     name: "Ms Scandalous",
-     birthYear: 1985,
-     link: "https://www.youtube.com/watch?v=2FPivlfvxu0"
-   },
-   {
-    name: "Juggy D",
-    birthYear: 1981,
-    link: "https://www.youtube.com/watch?v=1jAc_-FVjdI"
-  },
-  {
-    name: "Sukhbir Singh",
-    birthYear: 1969,
-    link: "https://www.youtube.com/watch?v=HiprNF9Jad0"
-  },
-  {
-    name: "Abrar-ul-Haq",
-    birthYear: 1989,
-    link: "https://www.youtube.com/watch?v=-lnnVIP7FEc"
-  },
-  {
-    name: "Rishi Rich",
-    birthYear: 1970,
-    link: "https://www.youtube.com/watch?v=O95-w2gACuA"
-  }
-];
-```
-</blockquote>
+Q1. What are some examples of Institutional Racism that happen today?  Find two journal articles about institutional racism. You can add what Dr Glenna Graves said in class, or the movie " Get Out" (2017)
 
-As I stated earlier, I copy and pasted Dr. White's code for `Table Assign` into my VSCODE to give a correct and buildable foundation to continue for this assignment.  In the remainder of the article I provide a detailed explanation of the solution-code for both his code and the edits and additions I made to the code to complete this task at hand. 
+Q2. What are Eduardo Bonilla-Silva's four themes/frames of color-blind perspective on race? What does the phrase from the 1990s "I do not see color" mean? How does this well intended phrase can actually exacerbate racism? Cite textbook.
 
-To preface,  when adjusting the "randomizer" button, I had tried a few whole numbers but wasn't really understanding their purpose. All I knew was, based on not using a number when I was originally attempting to create a solition, that a number was need. So, I asked chatGPT then eventually came to 0.5 as it only made sense to be a number that is used often, but couldn't be a whole number because I had just about tried every one possible. [Here is my chatGPT conversation](https://chatgpt.com/share/68f85092-7258-8002-808a-38db8bfeb79b). This conversation showed me that the 0.5 is needed as a pivot point to let sort randomly swap the elements being considered. If the number was not there, the automatic assumption would be that A>B. This would cause little to no change in the array and there would not be a shuffle. 
 
-## Part One: Creating the Table 
+## Introduction
 
-To begin, I used the function `populateTable` to pass the `artists` variable as an arguemtn to use the data sorted within `artists` to display the table on my webpage.
+Institutional Racism refers to ways in which institutions like school systems, housing authorities, healthcare, etc. maintain racial inequities through practices and procedures that they’ve decided are norms. Two examples or institutional racism includes the education funding in school segregations and healthcare disparities. 
 
-```js
-populateTable(artists); 
-```
+## Supporting Information
 
-I then used `querySelector` lines to grab references from elements like the `nameButton` and repeat with the following date and random buttons. These lines find the HTML elements that create results to be stored in new constants labeled `nameButton`, `dateButton`, and `randomButton` to prepare for interactive items on my website.
+First, education funding comes from local property taxes, so in areas where it is predominantly non-white neighborhoods often receive much lower funding, much fewer resources, and less experienced teachers because it is all that the areas can afford. This pattern leads to educational achievement gaps because of race. This institutional racism is based on the disproportional disadvantaged of racialized group. For example, “low-poverty districts that are primarily White spend almost $2,000 more per student than low-poverty districts where most students are people of color.” (Carter, 2025). 
+A second way of practiced Institutional Racism is healthcare disparities where predominantly non-White communities have fewer high-quality facilities, lesser access to care, and worse outcomes. Even when physicians are not individually biased, the institution’s practices and norms can systematically produce worse outcomes for certain racialized groups. For example, institutional racism in academic health centers occur in how policies and practices disadvantaged non-White (Adkins-Jackson, 2021).
+Next, Eduardo Bonilla-Silva’s four themes of color-blind perspective includes Abstract liberalism, Cultural Racism, Naturalization, and Minimization of Racism. The phrase “I do not see color” generally means that you treat everyone equally. This explains that they do not judge the character of a person by skin color or discriminate. This can lead to discriminating thoughts because of seeing color as the ideology rather than an actual practice of treating everyone equally.
 
-```js 
- const nameButton = document.querySelector("#name-button");
- const dateButton = document.querySelector("#date-button");
- const randomButton = document.querySelector("#random-button");
-``` 
-## Part Two: Creating Interactive Elements
-#### Buttons
+## Works Cited
 
-Once the buttons were made, the following lines attached an event listener to each button element that was selected earlier.
-
-```js
- nameButton.addEventListener("click", sortbyName);
- dateButton.addEventListener("click", sortbyDate);
- randomButton.addEventListener("click", randomize);
-```
-The code lines aboce work in ways to tell the broswer what should happen when the buttons are clicked. For example, when the reader clicked the button stored in `nameButton` which would only be shown on the website as Name, the function `sortbyName` is ran and executed to re-sort the list of names in an alternate way than before.
-
-#### Making the Buttons Work
-
-Now, we define the `sortbyName` function mentioned above that will be a reusable block of code to perform the task of sorting the list of artists by their names. Line 2 here creates the message "Sorting by Name..." that will appear in the VSCODE console when the button is clicked and called.
-
-
-```js
-function sortbyName() {
-  console.log("Sorting by name...");
-```
-The lines above do not actually sort anything, but log a message to be a place holder for future sorting code like the following:
-
-```js
-  function byName(a, b) {
-```
-Here, the two parametes, a and b, are taken to define the function `byName`. a and b will represent the items being compared, which in this case are artist objects like "Rishi Rich", etc. 
-
-```js
-    if (a.name < b.name) return -1;
-```
-This line checks to see if the name property of a comes before the name of b alphabetically. If it does, -1 is returned to tell JavaScript that a needs to be put before b in the `sort()` function that is called.
-
-```js
-    if (a.name > b.name) return 1;
-```
-For when the opposite is true and b comes before a alphabetically, 1 is returned to tell JavaScript that be needs to come before a.
-
-However, if neither conidition is true and the name are alphabetically equal, the `sort()` function will return 0, while tells JavaScript to leave the order unchanged. 
-
-```js
-    return 0;
-   }
-```
-
-## Part Three: Performing the Action
-
-#### The Sorting
-
-The following code explains the full `sortbyName()` function to sort the artists array, clear the old table content, and create a new and neatly sorted table to be displayed.
-
-```js
- const sortedByName = artists.sort(byName);
-```
-To begin, the line above takes the artists array and uses the `byName` function we defined a few lines back to determine the order of the elements in alphabetical comparison to be sorted. The `sort()` method changes the original array and returns the sorted array to hold the new, sorted lists by name. 
-
- ```js
- const tab = document.querySelector("#bhangra");
- ```
-Next, the "bhangara" HTML element is found and determined to be the table where the artist data is displayed.
-
-I then cleared everything currently inside the "bhangara" element and used this line:
-
-```js
- tab.innerHTML = "";
-```
-
-to "reset" the table before insert the newly sorted rows. If this line was not performed, there would be a chance of duplicates because the new rows would possibly get added to old ones.
-
-Finally, the existing table `populateTable()` is called with the new, sorted array instead of the original one. 
-
- ```js
- populateTable(sortedByName);
-}
-```
-With the lines above, the table is re-built and displayed in alphabetical order by artist name. 
-
-#### Repeating for following Buttons
-
-First, we will repeat the same steps for the sorting of the Date button for the rearranging. 
-
-```js
- function sortbyDate() {
-  console.log("Sorting by year...");
-  const sortedByDate = [...artists].sort((a, b) => a.birthYear - b.birthYear);
-  populateTable(sortedByDate);
-  console.log("date");
- }
-```
-Now, we will repeat using the same steps for the sorting randomizing the table.
-
-```js
- function randomize() {
-  console.log("Randomizing...");
-  const shuffled = [...artists].sort(() => Math.random()- 0.5);
-  populateTable(shuffled);
-  console.log("random");
- }
-```
-#### Part Four: Setting up the Table
-
-```js
-function populateTable(arr) {
-```
-The line above defines the `populateTable` function that takes the array parameter, `arr`, and sets the goal being able to display its data inside the webpages HTML table.
-
-Then, the following line finds the HTML element and uses it to insert the rows of the data into the table.
-
-```js
-const tab = document.querySelector("#bhangra");
-```
-## Building the string of HTML code
-
-```js
-let contents = "<tbody>";
-```
-The code above created a variable called `contents` to build up a string of HTML code by starting to open the `<tbody>` tag that is the beginning of where the rows will go in the tables body. 
-
-For the following code, the backticks (`) are template literals which will allow for the multiline strings so the code would not require awkward + and be easy to read.
-
-```js
-contents += `
-    <tr>
-      <th>Name</th>
-      <th>Year of Birth</th>
-      <th>Link</th>
-    </tr>
-    `;
-```
-A few things from the code above to note include `<tr>` and `<th>`. <tr> means table row and <th> means table header which would assume to be centered and bold. This command creates the header row at the top of the table. The column names include `Name`, `Year of Birth`, and `Link`.
-
-```js
-arr.forEach(artist => {
-```
-The line above begins a loop that processes each artist in the list one by one as the `.forEach()` method runs the function one for each element in the `arr` array given. 
-
-The arrow function then takes the current items are placed into the variables named artist to go one by one for each artist. 
-
-Now, to open the rows and build one table row per artist:
-
-```js
-  contents += "<tr>";
-  contents += `<td>${artist.name}</td>`;
-  contents += `<td>${artist.birthYear}</td>`;
-  contents += `<td><a href="${artist.link}" target = "_blank">$
-```
-The first line of the code above starts a new table row to give each artist a section. Next, the `<td>` table cell containing the artists name is added to use `${artist.name}` to insert the value of the name property. The same process is repeated for the birth years of the artists. Finally, the `<td>` cell for `artist.link` contains the link tag that inserts the URL from the artist object and makes the link capable of opening a new tab. The `$` at the end of this code chunk is used to cut the string off once the link is clickable. 
-
-```js
-  {artist.link}</a></td>`;
-```
-This code, following the one list prior, finishes up by ending the link, table cell, and the string to finish the link column in our table for each artist. 
-
-```js
-  contents += "</tr>"
-});
-```
-This line closes the HTML table row for the current artist to end the row function, `forEach` loop, and the JavaScript statement. We will now move on to close the `body` and insert the completed HTML into the table. 
-
-```js
-contents += "</tbody>";
-```
-As stated prior, this line of code closes the table body and finishes wrapping all of the rows. This line marks the end of the content area for the tables before assigning them to the HTML.
-
-```js
-tab.innerHTML = contents;
- }
-```
-To wrap up, the first line of this chunk inserts the generated HTML into the table on the webpage and uses the closing bracket to finally end the `populateTable` function. This final step renders the fully-constructed rows and information into the HTML table to make it appear in the appear. 
-
-We are done!
-
-## Full Code
-
-Here is a compelete solution ot the problem for readers for view below:
-
-```js
- const artists = [
-   {
-     name: "Ms Scandalous",
-     birthYear: 1985,
-     link: "https://www.youtube.com/watch?v=2FPivlfvxu0"
-   },
-   {
-    name: "Juggy D",
-    birthYear: 1981,
-    link: "https://www.youtube.com/watch?v=1jAc_-FVjdI"
-  },
-  {
-    name: "Sukhbir Singh",
-    birthYear: 1969,
-    link: "https://www.youtube.com/watch?v=HiprNF9Jad0"
-  },
-  {
-    name: "Abrar-ul-Haq",
-    birthYear: 1989,
-    link: "https://www.youtube.com/watch?v=-lnnVIP7FEc"
-  },
-  {
-    name: "Rishi Rich",
-    birthYear: 1970,
-    link: "https://www.youtube.com/watch?v=O95-w2gACuA"
-  }
-];
-
-populateTable(artists); 
- 
- const nameButton = document.querySelector("#name-button");
- const dateButton = document.querySelector("#date-button");
- const randomButton = document.querySelector("#random-button");
-
- nameButton.addEventListener("click", sortbyName);
- dateButton.addEventListener("click", sortbyDate);
- randomButton.addEventListener("click", randomize);
-
-function sortbyName() {
-  console.log("Sorting by name...");
-
-  function byName(a, b) {
-    if (a.name < b.name) return -1;
-    if (a.name > b.name) return 1;
-    return 0;
-   }
- const sortedByName = artists.sort(byName);
- const tab = document.querySelector("#bhangra");
- tab.innerHTML = "";
- populateTable(sortedByName);
-}
-
- function sortbyDate() {
-  console.log("Sorting by year...");
-  const sortedByDate = [...artists].sort((a, b) => a.birthYear - b.birthYear);
-  populateTable(sortedByDate);
-  console.log("date");
- }
-
- function randomize() {
-  console.log("Randomizing...");
-  const shuffled = [...artists].sort(() => Math.random()- 0.5);
-  populateTable(shuffled);
-  console.log("random");
- }
-
-function populateTable(arr) {
-const tab = document.querySelector("#bhangra");
-
-let contents = "<tbody>";
-
-contents += `
-    <tr>
-      <th>Name</th>
-      <th>Year of Birth</th>
-      <th>Link</th>
-    </tr>
-    `;
-
-arr.forEach(artist => {
-  contents += "<tr>";
-  contents += `<td>${artist.name}</td>`;
-  contents += `<td>${artist.birthYear}</td>`;
-  contents += `<td><a href="${artist.link}" target = "_blank">${artist.link}</a></td>`;
-  contents += "</tr>"
-});
-
-contents += "</tbody>";
-
-tab.innerHTML = contents;
- }
-```
+Carter, C. (2025, October 12). [Institutional Racism: What It Is and Why It Matters.](https://www.health.com/mind-body/health-diversity-inclusion/institutional-racism?)
+Paris B. Adkins-Jackson, PhD, MPH, Rupinder K. Legha, MD, and Kyle A. Jones, RN. (2021, 
+Febuary). [How to Measure Racism in Academic Health Centers, 23(2).](https://journalofethics.ama-assn.org/sites/joedb/files/2021-02/stas1-2102.pdf)

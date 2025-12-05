@@ -21,5 +21,22 @@ of the social links on my about page */
 }
   
 
+/* Push main content left to leave room for sidebar */
+@media (min-width: 992px) {
+  .mw7 {
+    margin-right: 260px; /* space for sidebar */
+  }
+}
 
+
+.blog-card-title {
+  color: #ff1493; /* default pink */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.blog-card:hover .blog-card-title {
+  color: #ff69b4; /* brighter pink on hover */
+}
 

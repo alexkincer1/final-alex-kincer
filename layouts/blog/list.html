@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<!-- Inject the sidebar -->
+{{ partial "sidebar.html" . }}
+
+<div class="mw7 center ph3">
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+
+  <section>
+    {{ range .Pages }}
+      <article class="pv4 bt bb b--black-10">
+        <a href="{{ .RelPermalink }}" class="f3 fw7 link black hover-pink">
+          {{ .Title }}
+        </a>
+        <p class="f6 gray">{{ .Date.Format "January 2, 2006" }}</p>
+        <p>{{ .Summary }}</p>
+      </article>
+    {{ end }}
+  </section>
+</div>
+
+{{ end }}
+

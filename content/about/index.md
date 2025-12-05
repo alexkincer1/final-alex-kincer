@@ -2,7 +2,7 @@
 title: About Me
 description: ""
 omit_header_text: false
-featured_image: images/C159EE83-9677-42CE-A547-2100D43CB7C1.jpeg
+featured_image: images/7b6b442822c8ba56fb6ff82f7bf04f1f.jpg
 summary:  "Eastern Kentucky, Letcher County, Family, Education, Cheerleading, Running, Occupational Therapy, Alex Kincer"
 type: page
 weight: 2
@@ -15,16 +15,6 @@ weight: 2
     </figcaption>
 </figure>
 
-<div class="mw7 center">
-<ul class="ul-socials mw7 center">
-    <li><a class="f5 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib near-black" href="https://www.instagram.com/alexkincer" target="_blank">Instagram</a></li>
-    <li><a class="f5 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib near-black" href="https://www.facebook.com/alex.kincer.5" target="_blank">Facebook</a></li>
-    <li><a class="f5 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib near-black" href="mailto:rakincer@georgetowncollege.edu" target="_blank">&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;</a></li>
-</ul>
-</div>
-<hr>
-
-
 
 ## My Education Background
 
@@ -36,7 +26,7 @@ Other than being a student, I am also an athlete on Georgetown's campus. I atten
 
 ## Future Plans
 
-With my major and background in athletics, I plan to attend graduate school for Occupational Therapy. Ideal situation for myself would be to attend OT School in Johnson City, TN where I would specialize in Pediatrics and graduate in the Winter of 2028. I have obtained almost 400 observation hours and feel that this occupation is my calling. 
+I have officially been accepted and enrolled in Milligan University's Master of Occupational Therapy program in Johnson City, TN and will begin in the Fall of 2026 after graduating from GC in May. With this program, I intend to become a Pediatric Occupational Therapist. 
 
 ## My Family
 

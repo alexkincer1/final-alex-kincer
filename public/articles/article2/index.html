@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Chapter Five: Flattening a Loop | My Website Warmup</title>
+    <title>Ballin&#39; Out Docuseries | My Website Warmup</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Flattening arrays into a single array while keeping all elements present.">
+    <meta name="description" content="A 500&#43; word personal reflection on the &lsquo;Ballin&rsquo; Out&rsquo; docuseries watched in KHS 347 at Georgetown College in the Fall of 2025.">
     <meta name="generator" content="Hugo 0.148.2">
     
     
@@ -37,26 +37,33 @@
 
     <meta property="og:url" content="http://localhost:1313/articles/article2/">
   <meta property="og:site_name" content="My Website Warmup">
-  <meta property="og:title" content="Chapter Five: Flattening a Loop">
-  <meta property="og:description" content="Flattening arrays into a single array while keeping all elements present.">
+  <meta property="og:title" content="Ballin&#39; Out Docuseries">
+  <meta property="og:description" content="A 500&#43; word personal reflection on the ‘Ballin’ Out’ docuseries watched in KHS 347 at Georgetown College in the Fall of 2025.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2025-11-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-07T00:00:00+00:00">
 
-  <meta itemprop="name" content="Chapter Five: Flattening a Loop">
-  <meta itemprop="description" content="Flattening arrays into a single array while keeping all elements present.">
-  <meta itemprop="wordCount" content="580">
+  <meta itemprop="name" content="Ballin&#39; Out Docuseries">
+  <meta itemprop="description" content="A 500&#43; word personal reflection on the ‘Ballin’ Out’ docuseries watched in KHS 347 at Georgetown College in the Fall of 2025.">
+  <meta itemprop="datePublished" content="2025-11-07T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-11-07T00:00:00+00:00">
+  <meta itemprop="wordCount" content="705">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Chapter Five: Flattening a Loop">
-  <meta name="twitter:description" content="Flattening arrays into a single array while keeping all elements present.">
+  <meta name="twitter:title" content="Ballin&#39; Out Docuseries">
+  <meta name="twitter:description" content="A 500&#43; word personal reflection on the ‘Ballin’ Out’ docuseries watched in KHS 347 at Georgetown College in the Fall of 2025.">
 
 	
   </head><body class="ma0 avenir bg-near-white development">
 
     
 
-  <header>
-    <div class="bg-black">
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('http://localhost:1313/images/7b6b442822c8ba56fb6ff82f7bf04f1f.jpg');">
+    <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center items-center justify-between">
     <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
@@ -116,6 +123,9 @@
   </div>
 </nav>
 
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+      </div>
     </div>
   </header>
 
@@ -126,67 +136,22 @@
     <article class="center cf pv5 ph3 ph4-ns mw7">
       <header>
         <h1 class="f1">
-          Chapter Five: Flattening a Loop
+          Ballin&#39; Out Docuseries
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
-        <p>This article comes from information gathered in reading <a href="https://eloquentjavascript.net/05_higher_order.html">Chapter Five in Eloquent JavaScript</a>. Once the lesson was learned, CSC 324 provided <a href="https://homerhanumat.github.io/csc324resources/exercises/eloquent-ch05.html">this Homework Assignment</a>. This article will discuss and break down Exercise One, Flattening.</p>
-<h2 id="the-assignment-details">The Assignment Details</h2>
-<p>Use the reduce method in combination with the concat method to “flatten” an array of arrays into a single array that has all the elements of the original arrays.</p>
-<blockquote>
-Though I recieved this answer from classmate Jose's screenshare that prompted in-depth discussion for the CSC 324 class on Septmeber 25, 2025, I will use this article to explain line by line what the code is doing and why each function was chosen.
-</blockquote>
-<h2 id="solution">Solution</h2>
-<h4 id="creating-the-array">Creating the Array</h4>
-<p>This following line of code creates a variable called <code>arrays</code> that then lists the values assigned to it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arrays</span> <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>], [<span style="color:#ae81ff">6</span>]];
-</span></span></code></pre></div><p>The key component of this line is the term <code>let</code> that allows the declared variable to be able to be reassigned later.</p>
-<p>The way these values are listed is referred to as a nested array which hold three seperate arrays inside the one larger array.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">flattened</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arrays</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acc</span>, <span style="color:#a6e22e">curr</span>) =&gt; <span style="color:#a6e22e">acc</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">curr</span>), []);
-</span></span></code></pre></div><p>The above line begins the flattening process by using the <code>.reduce()</code> function to take one element from the array at a time and slowly build up a single value. Following this command, <code>acc</code> and <code>curr</code> are then used to move on. <code>acc</code> starts as [] and grows as numbers are added to ultimately become the flattened array. <code>curr</code> is used for the nested array to be kept as, in this case, three values for three steps. Finally, for this step, <code>.concat()</code> merges two arrays at a time to produce a flattened single array.</p>
-<p>The following line then prints the value of the flattened variable to the console. When this line is run, the array will print out into the console.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">flattened</span>);
-</span></span></code></pre></div><p>The following line prints a similar string to the console but with an extra.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;\n Or &#34;</span>);
-</span></span></code></pre></div><p><code>\n</code> is a new line character that tells the console to move to the next line before printing the results. <code>Or</code> is the text that will be printed on the following line.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arrays2</span> <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>], [<span style="color:#ae81ff">6</span>]];
-</span></span></code></pre></div><p>The line above creates a new variable called <code>arrays2</code> and assigns a three array nested array to it. Similar to earlier, this preps the arrays to be flattened.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">flattened2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arrays2</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acc</span>, <span style="color:#a6e22e">curr</span>) =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">acc</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">curr</span>);
-</span></span><span style="display:flex;"><span> }, []);
-</span></span></code></pre></div><p>The code chunk above is the exact same as it was for <code>flattened</code> and <code>arrays</code> earlier so the arrays can be manipulated into being flattened.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">flattened2</span>);
-</span></span></code></pre></div><p>Also like before, <code>console.log</code> is used to print the newly flattened set of arrays into one array.</p>
-<p>Finally, the following chunk is the same as both the original and test 2 to create, nest, and flatten an array using the same kind of commands but different numbers, etc. for the manipulation.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">flattened3</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arrays3</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acc</span>, <span style="color:#a6e22e">curr</span>) =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">acc</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">curr</span>);
-</span></span><span style="display:flex;"><span>}, []);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">flattened3</span>);
-</span></span></code></pre></div><p>We are done!</p>
-<h2 id="full-code">Full Code</h2>
-<p>Here is a compelete solution ot the problem for readers for view below:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arrays</span> <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>], [<span style="color:#ae81ff">6</span>]];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">flattened</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arrays</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acc</span>, <span style="color:#a6e22e">curr</span>) =&gt; <span style="color:#a6e22e">acc</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">curr</span>), []);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">flattened</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;\n Or &#34;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arrays2</span> <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>], [<span style="color:#ae81ff">6</span>]];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">flattened2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arrays2</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acc</span>, <span style="color:#a6e22e">curr</span>) =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">acc</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">curr</span>);
-</span></span><span style="display:flex;"><span> }, []);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">flattened2</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arrays3</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]];
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">flattened3</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arrays3</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acc</span>, <span style="color:#a6e22e">curr</span>) =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">acc</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">curr</span>);
-</span></span><span style="display:flex;"><span>}, []);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">flattened3</span>);
-</span></span></code></pre></div>
+        <h2 id="class-summary">Class Summary</h2>
+<p>KHS 347 or Culture and Diversity in Healthcare is a course given at Georgetown College in the Fall semesters and taught by Dr. Megan Tackett-Trella. This course is about exploring different cultures and backgrounds to become more open-minded individuals in the healthcare field.</p>
+<h2 id="assignment-prompt">Assignment Prompt</h2>
+<p>For this assignment you will need to include a personal reflection that pertains to the docuseries <a href="https://youtube.com/playlist?list=PLhhS6jLPSLou2E9PIhWcF2XRLlpFz-ycn&amp;si=Hamzz2bn-q9LgVcGLinks">Ballin&rsquo; Out</a>.</p>
+<p>All 5 episodes (each are ~10 min long) should be watched so a reflection can be made.</p>
+<p>For your reflection you should explain your personal view on the experiences that the athletes face. Do not simply explain what happened in the docuseries but instead tie it to your own cultural viewpoints (comparing and contrasting what was presented in the series). The reflection should be a minimum of 500 words and AI sources should not be utilized. Doing so will result in a 0% on the assignment.</p>
+<h2 id="my-reflection">My Reflection</h2>
+<p>Regarding the first episode on LGBTQ+ athletes for wheelchair basketball, I did enjoy getting to see this from the inside as I have always wondered about sports performed within wheelchairs, and it is very interesting to learn about. There are so many rules and differences in running basketball and wheelchair basketball and it is eye opening. The most relatable portion of this episode for me would be the effects that coaches make on teams, athletes, and experiences. Though I have never had a situation of needing to “come out” or be scared to show my (straight) sexuality, the effects coaches and teammates have had on my comfortability and feeling of safety when expressing my feelings and thoughts are important and experienced in each practice and encounter, I have with them.
+In the fourth episode, I assumed I would relate to the episode because of the “mental health” title. I related to the negative mindset discussed when a mistake is made in the game in an athletic and unathletic aspect. In addition, having a coach that is draining both mentally and physically can be career-ending and life altering for an athlete. However, seeing the athletes take the steps to fight back and persevere against the lash back that the community was giving to the athletes for going against a public figure like Trooper Johnson was inspiring. There have been many times in my own athlete career where instances would happen that made myself or teammates uncomfortable, unheard, or pushed to the side in many ways. Like the episode, a coach like pushes and pushes the team to absolute exhaustion to make them feel like they are close to injury or giving up, but we didn’t feel open or supported enough to complain or step in, we just continued to fail and eventually get a break.
+Finally, also like the fourth episode, the class/session where the psychologist had team bonding questions and activities like the sticky notes and opening up about what is being studied and looked at, that is so appreciated and overlooked in sports. Over the last four years at Georgetown, when we near the end of the season and everyone is tired of each other or having a bad environment, Coach Joanie always brings us colored construction paper and markers and has us sit in a circle to write our names in the middle of our papers. Once we have our names, we pass the papers around the circle for each person on the team to write something they appreciate about the person on the paper or something they’ve seen them improve on throughout this season. I appreciated this until last season she gave the option to skip over someone’s paper if you didn’t have anything nice to say. I feel like this was defeating the purpose of this activity and put a damper on the team. Though names are never put on responses, it would be easy to tell who skipped and who didn’t. This could’ve been a breaking point for mentally exhausted people that really needed to be lifted up.
+In conclusion, sports, coaches, and teammates can make or break an experience, but using healthy methods of coping and understanding your feelings while also standing up for yourself and others is important to success and continuing on in life.</p>
+
       </div>
     </article>
   </div>
